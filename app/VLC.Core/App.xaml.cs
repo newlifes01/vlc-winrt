@@ -28,6 +28,7 @@ using Windows.UI.Xaml.Media;
 
 namespace VLC
 {
+    //应用程序入口
     public sealed partial class App : Application
     {
         public static CoreDispatcher Dispatcher;
@@ -39,13 +40,14 @@ namespace VLC
         public static OpenFilePickerReason OpenFilePickerReason = OpenFilePickerReason.Null;
         public static Model.Music.AlbumItem SelectedAlbumItem;
         public static IContainer Container;
-
+        /* App类的构造函数*/
         public App()
         {
             InitializeComponent();
             Suspending += OnSuspending;
             Container = AutoFacConfiguration.Configure();
-
+            
+            //判断系统Api版本及是否运行环境
             if (ApiInformation.IsApiContractPresent("Windows.Foundation.UniversalApiContract", 3) 
                 && DeviceHelper.GetDeviceType() == DeviceTypeEnum.Xbox)
             {
@@ -71,7 +73,7 @@ namespace VLC
         }
 
         public static Frame ApplicationFrame => RootPage?.NavigationFrame;
-
+        
         public static MainPage RootPage => Window.Current?.Content as MainPage;
 
         public static SplitShell SplitShell => RootPage.SplitShell;

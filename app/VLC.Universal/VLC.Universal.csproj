@@ -17,7 +17,8 @@
     <EnableDotNetNativeCompatibleProfile>true</EnableDotNetNativeCompatibleProfile>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <PackageCertificateKeyFile>VLC_WinRT.Universal_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <PackageCertificateKeyFile>VLC.Universal_StoreKey.pfx</PackageCertificateKeyFile>
+    <PackageCertificateThumbprint>AC8A8C8F6C4C9C1080F60EE158204E4C32101D34</PackageCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
     <DebugSymbols>true</DebugSymbols>
@@ -354,7 +355,7 @@
     <PRIResource Include="Strings\uk-UA\Resources.resw" />
     <PRIResource Include="Strings\en-US\Resources.resw" />
     <PRIResource Include="Strings\is-IS\Resources.resw" />
-    <None Include="VLC_WinRT.Universal_TemporaryKey.pfx" />
+    <None Include="VLC.Universal_StoreKey.pfx" />
     <PRIResource Include="Strings\cs-CZ\Resources.resw" />
     <PRIResource Include="Strings\pt-PT\Resources.resw" />
   </ItemGroup>
@@ -1238,6 +1239,7 @@
     <Content Include="..\..\libvlc\Universal\vlc-$(TargetedSDKArchitecture)\$(Configuration)\plugins\stream_out\libstream_out_transcode_plugin.dll">
       <Link>plugins\stream_out\libstream_out_transcode_plugin.dll</Link>
     </Content>
+    <None Include="Package.StoreAssociation.xml" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="VLCCommands.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

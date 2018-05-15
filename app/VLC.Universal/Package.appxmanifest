@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" xmlns:uap3="http://schemas.microsoft.com/appx/manifest/uap/windows10/3" xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities" IgnorableNamespaces="uap mp uap3 rescap">
-  <Identity Name="VideoLAN.VLC" Publisher="CN=716F2E5E-A03A-486B-BC67-9B18474B9D51" Version="3.0.2.0" />
-  <mp:PhoneIdentity PhoneProductId="959b7d4f-83ae-4aa5-86a4-c9cb58572541" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Identity Name="4937690FF31B6.63599B81B3BE2" Publisher="CN=C8E7C11F-002D-4D9F-BFE5-AE7BE1F635C8" Version="1.1.0.0" />
+  <mp:PhoneIdentity PhoneProductId="5908ac8a-3a1c-4b75-9fb5-dd499f52d863" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
-    <DisplayName>VLC</DisplayName>
-    <PublisherDisplayName>VideoLAN</PublisherDisplayName>
+    <DisplayName>一建视频播放器</DisplayName>
+    <PublisherDisplayName>万机宸翰</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
   <Dependencies>
@@ -15,7 +15,7 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="VLC.App">
-      <uap:VisualElements DisplayName="VLC" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="VLC.Universal" BackgroundColor="transparent">
+      <uap:VisualElements DisplayName="一建视频播放器-VLC" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="VLC.Universal" BackgroundColor="transparent">
         <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" ShortName="VLC" Square310x310Logo="Assets\Square310x310Logo.png" Square71x71Logo="Assets\Square71x71Logo.png">
           <uap:ShowNameOnTiles>
             <uap:ShowOn Tile="square150x150Logo" />

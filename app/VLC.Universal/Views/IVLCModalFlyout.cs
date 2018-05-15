@@ -1,4 +1,13 @@
-﻿
+﻿/**********************************************************************
+ * VLC for WinRT
+ **********************************************************************
+ * Copyright © 2013-2018 VideoLAN and Xboxwin
+ *
+ * Licensed under GPLv2+ and MPLv2
+ * Refer to COPYING file of the official project for license
+ **********************************************************************/
+
+
 namespace VLC.UI.Views
 {
     interface IVLCModalFlyout
